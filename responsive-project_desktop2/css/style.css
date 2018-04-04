@@ -1,0 +1,208 @@
+body {
+  font-size: 100%;
+  background-color: #D9D9D9;
+}
+
+.logo {
+  float: left;
+  max-width: 70%;
+}
+
+.main-nav {
+  clear: left;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+  margin: .02em auto 2em; 
+  box-sizing: border-box;
+}
+
+.main-nav ul {
+  padding: 0;
+  background-color: black;
+}
+
+.main-nav li {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  margin: 0 3%;
+  padding: 1% 3%;
+}
+
+.main-nav a {
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: lightgrey;
+}
+
+main a:visited {
+  color: darkslategrey;
+}
+
+main {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  padding: 1.5% 5% 0;
+}
+
+main img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 10%;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.05em;
+}
+
+main p:first-of-type::first-letter {
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+
+main p:last-of-type {
+  text-align: right;
+  font-style: oblique;
+  font-size: .9em;
+}
+
+.additional-reading {
+  text-align: left;
+  display: block;
+  padding-bottom: 2em;
+}
+
+.additional-reading h2 {
+  font-size: 1.57em;
+  text-decoration: overline;
+  font-style: italic;
+  margin-top: 1.5em;
+}
+
+.additional-reading li {
+  list-style: circle;
+  font-style: italic;
+  font-size: 1.05em;
+  padding-bottom: .75em;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.75em;
+  text-decoration: overline;
+  color: darkslategray;
+}
+
+@media only screen and (min-width: 600px)
+{
+  .logo {
+    max-width: 50%;
+  }
+
+  .main-nav li {
+    margin: 0 5%;
+  }
+
+  .main-nav a {
+    font-size: 1.25rem;
+  }
+
+  main {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    font-size: 100%;
+  }
+
+  main img {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 845px)
+{
+  .page-header {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    max-width: 35%;
+  }
+
+  .main-nav li {
+    margin: 0 7%;
+    padding: .5% 3%;
+  }
+
+  main img {
+    max-width: 45%;
+    float: right;
+    margin-left: 5%;
+    margin-bottom: 1em;
+  }
+
+  main {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .additional-reading h2 {
+    font-size: 1.4em;
+  }
+  
+  .additional-reading li {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 1060px)
+{
+  body {
+    max-width: 85em;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+  }
+
+  main {
+    max-width: 70%;
+  }
+
+  main:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  article {
+    max-width: 70%;
+    float: left;
+    padding-bottom: 2em;
+  }
+
+  .additional-reading {
+    max-width: 30%;
+    float: right;
+    padding-left: .75em;
+  }
+}
